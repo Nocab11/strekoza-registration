@@ -70,6 +70,7 @@
     flex-direction: column;
 }
 .auth-paragraph-lk {
+    display: none;
     margin-top: 10px;
 }
 .auth-label {
@@ -195,6 +196,9 @@ input.auth-input::placeholder {
     font-size: 16px;
     line-height: 20px;
     color: #B4B4B4;
+}
+input.auth-input.auth-input_password::placeholder {
+    font-size: 12px;
 }
 
 @media (max-width: 991px) {
