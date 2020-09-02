@@ -30,18 +30,23 @@
             <div class="authorization-content">
                 <p class="auth-head">Зарегистрироваться</p>
                 <p class="auth-paragraph">Если у вас есть аккаунт, вы можете <a class="auth-link" href="javascript:void(0);">войти</a> в него.</p>
-                <form action="" class="registration-form">
+                <form action="" class="registration-form" method="post">
+                    <!-- Для класса auth-box добавить класс has-error, если поле заполнено не верно -->
                     <div class="auth-box">
-                        <label class="auth-label" for="registration_email">Email</label>
-                        <input class="auth-input" type="email" name="email" id="registration_email" placeholder="Введите ваш e-mail">
+                        <label class="auth-label" for="registration_email_id">Email</label>
+                        <input class="auth-input" type="email" name="registration_email" id="registration_email_id" placeholder="Введите ваш e-mail">
                     </div>
+                    <!-- Поле с телефоном пока неактивно
                     <div class="auth-box">
-                        <label class="auth-label" for="registration_phone">Номер телефона</label>
-                        <input class="auth-input" type="tel" name="phone" id="registration_phone" placeholder="+7 (999) 000 00-00">
+                        <label class="auth-label" for="registration_phone_id">Номер телефона</label>
+                        <input class="auth-input" type="tel" name="registration_phone" id="registration_phone_id" placeholder="+7 (999) 000 00-00">
                     </div>
-                    <div class="auth-box">
-                        <label class="auth-label" for="registration_promocode">Промокод</label>
-                        <input class="auth-input" type="text" name="promocode" id="registration_promocode" placeholder="Введите промокод">
+                    -->
+                    <!-- Для класса auth-box добавить класс has-error, если поле заполнено не верно -->
+                    <div class="auth-box has-error">
+                        <label class="auth-label" for="registration_promocode_id">Промокод</label>
+                        <input class="auth-input" type="text" name="registration_promocode" id="registration_promocode_id" placeholder="Введите промокод">
+                        <span class="error-text">Промокод неверен</span>
                     </div>
                     <div class="auth-policy checkbox-box">
                         <input class="auth-input-checkbox" type="checkbox" id="registration_checkbox">
